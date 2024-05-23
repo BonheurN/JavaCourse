@@ -1,0 +1,43 @@
+# this was find the average in an array using for each loop 
+import java.util.Arrays;
+public class Main{
+  public static void main(String[]args){
+    int[] ages = {20,22,18,25,23,28};
+    int avg, sum = 0;
+    length = ages.length
+    for(int i:ages){
+      sum += i;
+      avg = sum / length;
+      System.out.println("The average age is "+avg);
+      
+    }
+  }
+}
+
+# here we are going to find the lowest age using for each loop and if conditional 
+
+int[] ages = {20,11,22,27,25,16,14};
+int avg, sum = 0;
+int length = ages.length;
+lowest_age = ages[0];
+for(int i:ages){
+  if(lowest_age > i){
+    lowest = i;
+  };
+  
+}
+# i want to deploy linearSearch to find the index of lowest age in the above example
+int[] ages = {20,11,22,27,25,16,14};
+int lowest_age = linearSearch(array, 11);
+if(lowest_age != -1){
+  System.out.println("Lowest_age is at"+lowest_age)
+}
+
+private static int linearSearch(int[] array, int value ){
+  for(int i=0; i<array.length; i++){
+    if(array[i] = value){
+      return i;
+    }
+    return -1;
+  }
+}
