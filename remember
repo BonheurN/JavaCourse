@@ -1,0 +1,24 @@
+import java.util.Arrays;
+
+public class remember{
+  public static void main(String[]args){
+    int[] age = {22,20,18,16,14,26,24};
+    int index = linearSearch(age, index);
+    if(index != -1){
+      System.out.println("Item found at "+ index);
+    }
+    else{
+      System.out.println("Element not found");
+    }
+     }
+}
+
+    private static int linearSearch(int []age, int value){
+      for(int i=0; i<age.length; i++){
+        if( age[i] == value){
+          return i;
+        }
+      }
+      return -1; 
+    }
+ 
