@@ -1,0 +1,42 @@
+# I ma going to use the created method to make overloaded method 
+public class Method{
+  public static void main(String[]args){
+    main();  # If we want we can print it many times we want 
+  }
+  static void main(){
+    System.out.println("I forgot it ");
+    System.out.println("I just got executed");
+    Human human = new Human("Rick", 65, 78.34);
+    human.eat();
+    System.out.println(human.name);
+    System.out.println(human.age);
+    System.out.println(human.weight);
+  
+    
+    
+  }
+}
+Class Vector{
+  double x;
+  double y;
+  Vector(){
+    this.x = x;
+    this.y = y;
+    
+  }
+}
+Class Human{
+  String name;
+  int age;
+  double weight;
+  Human(String name, int age, double weight){
+
+    this.name = name;
+    this age = age;
+    this.weight = weight;
+    
+  }
+  void eat(){
+    System.out.println(name+" Likes eating pilau");
+  }
+}
