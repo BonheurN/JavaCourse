@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 public class Array {
 
@@ -14,6 +16,23 @@ public class Array {
 		System.out.println(refrigerator[0].name);
 		System.out.println(refrigerator[1].name);
 		System.out.println(refrigerator[2].name);
+
+		String[] Cars = new String[3];
+		Cars[0] = "Volvo";
+		Cars[1] = "BMW";
+		Cars[2] = "Benz";
+		for(int i:Cars){
+			System.out.println(i);
+		}
+
+		System.out.println(cars[0]);
+
+ArrayList<String> mycollection = new ArrayList<>();
+		mycollection[0].add("Lamborghini");
+		mycollection[1].add("Ferrari");
+		mycollection[2].add("Corvette");
+		mycollection[3].add("Supra");
+		System.out.println(mycollection.get(2));
 	}	
 }
 class Food{
