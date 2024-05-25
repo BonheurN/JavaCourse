@@ -1,0 +1,22 @@
+# I am trying to do array of object but it will be mixed with to string method
+
+public class Main{
+  public static void main(String[]args){
+      Car car = new Car();
+      System.out.println(car.color);//this will print the yellow color
+      System.out.println(toString());// this is going to print the address of where the Car class
+                                   // In order to make the toString print characters we have to do what we call override
+      System.out.println(car);
+      System.out.println(car.toString());// now this the same as the above printline will out put the attributes of car class
+      
+  }
+
+}
+class Car{
+String name = "Corvete";
+String color= "Yellow";
+int year = 2002;
+public String toString(){
+return name +"\n"+ color +"\n"+ year;
+ }
+}
