@@ -1,0 +1,23 @@
+//I am going to create Array of objects containig different food 
+public class{
+  public static void main{
+      Food[] refrigerator = new Food[3];
+      Food dish1 = new Food("Pierrogi");
+      Food dish2 = new Food("Imvange");
+      Food dish3 = new Food("Pilau");
+
+      refrigirator[0] = dish1;
+      refrigirator[1] = dish2;
+      refrigirator[2] = dish3;
+
+      System.out.println(refrigerator[0].name);
+      System.out.println(refrigirator[1].name);
+
+  }
+}
+class Food{
+String name;
+Food(String name){
+  this.name = name;
+}
+}
