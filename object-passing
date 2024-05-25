@@ -1,0 +1,18 @@
+
+public class Main{
+  public static void main(String[]args){
+      
+      Garage garage = new Garage();
+      Car cara = new Car();
+  }
+}
+class Car{
+String name
+Car(String name){
+this.name = name;
+}
+
+}
+classs Garage{
+
+}
