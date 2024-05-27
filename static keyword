@@ -1,0 +1,23 @@
+
+
+public class Main{
+  public static void main(String[]args){
+
+  Friend friend1 = new Friend("Geoffrey");
+  Friend friend2 = new Friend("Moses");
+  
+  System.out.println(Friend.numberoffriends());//this helps you to extract number of friends that you have in instances of the main classes
+  Friend.displayoffriends();
+
+  
+  
+  }
+}
+class Friend{
+  String name;
+  static int numberoffriends;
+  Friend(){
+  this.name = name;
+  numberoffriends ++;
+  }
+}
