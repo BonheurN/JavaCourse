@@ -1,0 +1,35 @@
+Public class Main{
+  public static void main(String[]args){
+
+  Car car = new Car();
+  Bicycle bike = new Bicycle();
+  System.out.println(car.speed);
+  System.out.println(bke.speed);
+  bike.go();
+  car.stop();
+  c
+  }
+}
+class Vehicle{
+  double speed;
+  String break;
+  void go(){
+  System.out.println("This vehicle is moving ");
+  }
+  void stop(){
+  System.out.println("This vehicle is stopped ");
+  }
+
+}
+class Car extends Vehicle{
+int doors = 4;
+int wheels = 4;
+
+
+}
+Bicycles extends Vehicle{
+int pedals = 2;
+int wheels = 2;
+
+
+}
