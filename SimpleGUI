@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+public class Main{
+  public static void main(String[]args){
+      String company = JOptionPane.showInputDialog("Enter name of the company");
+      JOptioPane.showMessageDialog(null, company +"is the company you opened up");
+
+      String name = JOptionPane.showIputDialog("Enter name of businness partner");
+      JOptionPane.showMessageDialog(null,  name+ " is your shareholder");
+
+      double investment = Double.parseDouble(JOptionPane.showinputDialog("Enter amount of money you plan to invest"));
+      JOptionPane.showMessageDialog(null, investment + " is a huge investment ");
+
+      double budget = Double.parseDouble(JOptionPane.showInputDialog("Enter estimation of budget of your company"));
+      JOptionPane.showMessageDialog(null, "woow that's a pretty good budget");
+
+  }
+}
