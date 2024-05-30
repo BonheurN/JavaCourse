@@ -1,13 +1,20 @@
 public class Main{
   public static void main(String[]args){
+
+    Polythene polythene = new Polythene();
+    Dumpster dumpster = new Dumpster("oganic waste");
+polythene.Dumping(dumpster);
   
   }
 }
-class Dumpster
-
-Dumpster(){
-
+class Dumpster{
+String name;
+Dumpster(String name){
+this.name = name;
+}
 }
 class Polythene{
-
+void Dumping(Dumpster dumpster){
+System.out.println(Dumpster.name + " is in Pit");
+  }
 } 
