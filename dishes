@@ -1,0 +1,25 @@
+public class Test {
+	public static void main(String[]args) {
+		Food[] refrigerator = new Food[3];
+		
+		Food plate1 = new Food("Sphagheti bolognese");
+		Food plate2 = new Food("Pilawu");
+		Food plate3 = new Food("noodles");
+//		Food plate4 = new Food("Imvange");
+		
+		refrigerator[0] = plate1;
+		refrigerator[1] = plate2;
+		refrigerator[2] = plate3;
+//		refrigerator[3] = plate4;
+		System.out.println(plate1.name);
+		System.out.println(plate2.name);
+		System.out.println(plate3.name);
+	}
+}
+		
+class Food{
+	String name;
+	Food(String name){
+		this.name = name;
+	}
+}		
