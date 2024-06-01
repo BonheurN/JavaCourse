@@ -1,0 +1,39 @@
+
+public class inheritance {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Car car = new Car();
+		Bike bike = new Bike();
+		System.out.println(car.speed);
+		System.out.println(bike.speed);
+		
+		bike.go();
+		bike.stop();
+		System.out.println(bike.pedals);
+		
+	}
+
+}
+class Vehicle {
+	
+	double speed;
+	void go() {
+		System.out.println("This vehicle is moving");
+	}
+	void stop() {
+		System.out.println("This vehicle has stopped");
+	}
+}
+class Car extends Vehicle{
+	int wheels = 4;
+	int door = 4;
+	
+}
+class Bike extends Vehicle{
+	int wheels = 2;
+	int pedals = 2;
+	
+}
+
