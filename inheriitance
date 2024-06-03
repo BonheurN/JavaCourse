@@ -1,73 +1,28 @@
 
-public class inheritance {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		Car car = new Car();
-		Bike bike = new Bike();
-		System.out.println(car.speed);
-		System.out.println(bike.speed);
-		
-		bike.go();
-		bike.stop();
-		System.out.println(bike.pedals);
-		
-	}
-
-}
-class Vehicle {
-	
-	double speed;
-	void go() {
-		System.out.println("This vehicle is moving");
-	}
-	void stop() {
-		System.out.println("This vehicle has stopped");
-	}
-}
-class Car extends Vehicle{
-	int wheels = 4;
-	int door = 4;
-	
-}
-class Bike extends Vehicle{
-	int wheels = 2;
-	int pedals = 2;
-	
-}
-
 public class Test {
 	public static void main(String[]args) {
-	Employees employee1 = new Employees("Electrician");
-	Employees employee2 = new Employees("Mechanician");
-	Employees employee3 = new Employees("Plumber");
-	Employees employee4 = new Employees("Mason");
-//	System.out.println(Employees.Numberofworkers);
-	Employees.displaynoofworkers();
-	workers workers = new workers();
-		technician  technic = new technician();
-	technic.work();
+		
+		Screwdriver screwdriver = new Screwdriver();
+		opener opened = new opener();
+		bolts bolt = new bolts();
+		System.out.println("pick that Screw driver and "+screwdriver.work+" in viggo");
+		opened.opening("open bolts");
 	}
 }
-class Employees{
-	String names;
-	static int Numberofworkers;
-	Employees(String names){
-	this.names = names;	
-	Numberofworkers ++;
+
+class Screwdriver{
+	String work = "opening bolts";
+	void opening(String name){
+	this.work = name;
+		System.out.println("Pick this opener and "+work+" in viggo");
+	}
+	
+}
+class opener extends Screwdriver{
 	
 	
+		
 	}
-	static void displaynoofworkers() {
-		System.out.println( Numberofworkers+ " is the number of people wo will be working");
-	}
-}
-class workers{
-	void work() {
-		System.out.println("You will be working on technical issues of this project");
-	}
-}
-class technician extends workers{
+class bolts extends Screwdriver{
 	
 }
