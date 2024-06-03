@@ -1,0 +1,33 @@
+public class Comics{
+  public static void main(String[]arg){
+    Personality personality = new Personality();
+    Hero hero1 = new Hero("Batman",32,"$$$$");
+    Hero hero2 = new Hero("Superman",35,"Superpower");
+
+    System.out.println(hero1.name);
+    System.out.println(hero1.age);
+    System.out.println(hero1.power);
+    hero2.toString();
+  }
+}
+class Personlity{
+String name;
+int age;
+Personality(String name,int age){
+this.name = name;
+this.age = age;
+  }
+public String to String(){
+  return this.name +"\n"+ this.age;
+  }
+}
+class Hero extends Personality{
+String power;
+Hero(String name,int age,String power){
+super(name,age);
+this.power = power;
+  }
+public String toString(){
+  return super.toString() + this.power+;
+  }
+}
