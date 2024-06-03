@@ -16,7 +16,9 @@ class Screwdriver{
 	this.work = name;
 		System.out.println("Pick this opener and "+work+" in viggo");
 	}
-	
+	void fast(){
+	System.out.println("");
+	}
 }
 class opener extends Screwdriver{
 	
