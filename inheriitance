@@ -45,6 +45,9 @@ public class Test {
 	Employees employee4 = new Employees("Mason");
 //	System.out.println(Employees.Numberofworkers);
 	Employees.displaynoofworkers();
+	workers workers = new workers();
+		technician  technic = new technician();
+	technic.work();
 	}
 }
 class Employees{
@@ -59,4 +62,12 @@ class Employees{
 	static void displaynoofworkers() {
 		System.out.println( Numberofworkers+ " is the number of people wo will be working");
 	}
+}
+class workers{
+	void work() {
+		System.out.println("You will be working on technical issues of this project");
+	}
+}
+class technician extends workers{
+	
 }
