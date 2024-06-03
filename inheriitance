@@ -37,3 +37,26 @@ class Bike extends Vehicle{
 	
 }
 
+public class Test {
+	public static void main(String[]args) {
+	Employees employee1 = new Employees("Electrician");
+	Employees employee2 = new Employees("Mechanician");
+	Employees employee3 = new Employees("Plumber");
+	Employees employee4 = new Employees("Mason");
+//	System.out.println(Employees.Numberofworkers);
+	Employees.displaynoofworkers();
+	}
+}
+class Employees{
+	String names;
+	static int Numberofworkers;
+	Employees(String names){
+	this.names = names;	
+	Numberofworkers ++;
+	
+	
+	}
+	static void displaynoofworkers() {
+		System.out.println( Numberofworkers+ " is the number of people wo will be working");
+	}
+}
