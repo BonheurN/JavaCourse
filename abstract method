@@ -1,0 +1,17 @@
+
+//abstract class can not be instantiated 
+//but it has a sub class method within abstract class can not have implementation
+public class Main{
+  public static void main(String[]args){
+    //Vehicle vehicle = new Vehicle();
+      Car car = new Car();
+  }
+}
+public abstract class Vehicle{
+  void go();
+}
+public class Car extends Vehicle{
+  void go(){
+    System.out.println("The driver is going to drive the car");
+  }
+}
