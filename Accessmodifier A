@@ -1,0 +1,15 @@
+package pakage1;
+import package2.*;
+
+public class A {
+	public    String publicMessage = "This is public";
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		A a = new A();
+		C c = new C();
+		System.out.println(a.publicMessage);
+		
+	}
+
+}
