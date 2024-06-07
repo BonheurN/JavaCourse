@@ -1,0 +1,19 @@
+package package2;
+import pakage1.*;
+
+public class Asub extends A {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Asub asub = new Asub();
+		C c = new C();
+		System.out.println(asub.publicMessage);
+		System.out.println(c.DefaultMessage);
+		System.out.println(c.protectedMeassage);
+		System.out.println();
+		
+	}
+
+}
+
+
