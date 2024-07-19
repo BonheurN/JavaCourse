@@ -14,9 +14,9 @@ class Car{
 	private String origin;
 	
 	Car(String name, String color, String origin){
-		this.name = name;
-		this.color = color;
-		this.origin = origin;
+		this.setName(name);
+		this.setColor(color);
+		this.setOrigin(origin);
 	}
 	public String getName() {
 		return name;
