@@ -1,0 +1,44 @@
+
+public class Gym {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Bicycle bicycle = new Bicycle();
+		Bike bike = new Bike();
+		Scooter scooter = new Scooter();
+		Ride[] race = {bicycle,bike, scooter};
+		
+		for(Ride x:race) {
+			x.race();
+		}
+		
+	}
+}
+class Ride{
+	public void race() {
+		System.out.println("The vehicels are starting the race"); 
+	}
+	
+}
+class Bicycle extends Ride{
+	@Override
+	public void race() {
+		System.out.println("The bicycle is beginning to leave");
+	}
+	
+}
+class Bike extends Ride{
+	@Override
+	public void race() {
+		System.out.println("The bike is also revving the engine");
+	}
+	
+}
+class Scooter extends Ride{
+	@Override
+	public void race() {
+		System.out.println("The scooter is also starting to accelerate");
+	}
+	
+}
