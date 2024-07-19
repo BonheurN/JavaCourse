@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class Gym {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		ANimale animal;
+		
+		System.out.println("What animals do you want to hear it's voice");
+		System.out.print( "(1 == Lion) and (2 == birds)\n");
+		System.out.print("Choose your voice:");
+		int voice = scanner.nextInt();
+		if( voice == 1) {
+			animal = new Lion();
+			animal.voices();
+			
+		}
+		else if (voice == 2 ) {
+			animal = new Bird();
+			animal.voices();
+		}
+		
+		else {
+			animal = new ANimale();
+			animal.voices();
+			System.out.println("You made invalide choice");
+		}
+		scanner.close();
+		
+		}
+	
+	
+		
+	}
+class ANimale{
+	public void voices() {
+		System.out.println("Animals make sounds");
+	}
+}
+class Lion extends ANimale{
+	@Override
+	public void voices() {
+		System.out.println("The lions are roaring");
+	}
+	
+}
+class Bird extends ANimale{
+	@Override
+	public void voices() {
+		System.out.println("The birds are singing ");
+	}
+	
+}
