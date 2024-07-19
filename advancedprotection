@@ -1,1 +1,61 @@
 
+
+public class Gym {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Car car1 = new Car("Lamborghini", "Yellow", "German");
+		Car car2 = new Car(car1);
+		
+		
+//		car1.setName("Ferrari");
+		System.out.println(car1);
+		System.out.println(car2);
+		System.out.println();
+		System.out.println(car1.getName());
+		System.out.println(car1.getColor());
+		System.out.println(car1.getOrigin());
+		System.out.println();
+		System.out.println(car2.getName());
+		System.out.println(car2.getColor());
+		System.out.println(car2.getOrigin());
+		
+	}
+}
+class Car{
+	private String name;
+	private String color;
+	private String origin;
+	
+	Car(String name, String color, String origin){
+		this.setName(name);
+		this.setColor(color);
+		this.setOrigin(origin);
+	}
+	Car(Car x){
+		this.copy(x);
+	}
+	public String getName() {
+		return name;
+	}
+	public String getColor() {
+		return color;
+	}
+	public String getOrigin() {
+		return origin;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public void setOrigin(String origin) {
+		this.origin = origin;
+	}
+	public void copy(Car x) {
+		this.setName(x.getName());
+		this.setColor(x.getColor());
+		this.setOrigin(x.getOrigin());
+	}
+}
