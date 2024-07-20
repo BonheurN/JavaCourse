@@ -10,6 +10,9 @@ public class Gym {
 		
 		if(file.exists()) {
 			System.out.println("that file exists");
+			System.out.println(file.getPath());
+			System.out.println(file.getAbsolutePath());
+			System.out.println(file.isFile());
 		}
 		else {
 			System.out.println("That file does not exists");
