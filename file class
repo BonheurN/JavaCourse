@@ -1,0 +1,21 @@
+import java.io.File;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Gym {
+	public static void main(String[]args) {
+	
+
+		File file = new File("C:\\Users\\User HP\\OneDrive - Griffith College\\Desktop/secret_message.txt");
+		
+		if(file.exists()) {
+			System.out.println("that file exists");
+		}
+		else {
+			System.out.println("That file does not exists");
+		}
+		
+	}
+}
+	
+
