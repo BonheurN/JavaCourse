@@ -1,0 +1,50 @@
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Gym {
+	public static void main(String[]args) throws UnsupportedAudioFileException, IOException, LineUnavailableException, FileNotFoundException  {
+		Scanner scanner = new Scanner(System.in);
+		
+		Animal animal;
+		System.out.println("Enter an animal of your choice");
+		System.out.print("(Dog = 1) or (cat = 2):");
+		int choice = scanner.nextInt();
+		
+		if(choice == 1) {
+			animal = new Dog();
+			animal.sound();
+		}
+		else if(choice == 2) {
+			animal = new Cat();
+			animal.sound();
+		}
+		else {
+			System.out.println("The choice was Invalid ");
+			animal = new Animal();
+			animal.sound();
+		}
+	
+	}
+}
+class Animal{
+	void sound() {
+		System.out.println("The animals are making sound");
+	}
+	
+}
+class Dog extends Animal{
+	void sound() {
+		System.out.println("The dog goes *bark*");
+	}
+}
+class Cat extends Animal{
+	void sound() {
+		System.out.println("The cat goes *meow*");
+	}
+	
+}
