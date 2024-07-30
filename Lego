@@ -1,0 +1,45 @@
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.border.Border;
+
+public class Gym {
+	public static void main(String[]args)  {
+	
+		ImageIcon icon = new ImageIcon("LEGO_car.jpeg");
+		Border border = BorderFactory.createLineBorder(Color.cyan,3);
+		JLabel label = new JLabel("LEGO is here again");
+		label.setIcon(icon);
+		label.setBorder(border);
+		label.setBackground(new Color(0x1234567));
+		label.setOpaque(true);
+		label.setHorizontalTextPosition(JLabel.CENTER);
+		label.setVerticalTextPosition(JLabel.TOP);
+		label.setForeground(Color.green);
+		label.setFont(new Font("Mv Boli",Font.PLAIN,25));
+		label.setVerticalAlignment(JLabel.CENTER);
+		label.setHorizontalAlignment(JLabel.CENTER);
+		label.setBounds(150, 150, 150, 150);
+		
+		
+		
+		JFrame frame = new JFrame("LEGO");
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(500,500);
+		frame.add(label);
+		frame.setLayout(null);
+		
+		
+		ImageIcon X = new ImageIcon("LEGO_logo.svg.png");
+		frame.setIconImage(X.getImage());
+		frame.getContentPane().setBackground(new Color(250,250,250));
+		
+		
+	}
+}
