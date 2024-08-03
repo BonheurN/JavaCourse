@@ -1,0 +1,56 @@
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Myframe extends JFrame implements ActionListener{
+
+	JButton button ;
+	JLabel label ;
+	
+	public Myframe() {
+		
+		ImageIcon image = new ImageIcon("contentrix.jpeg");
+		
+		
+		
+		label = new JLabel();
+		label.setIcon(image);
+		label.setBounds(100, 170, 70, 90);
+		label.setVisible(false);
+		
+		
+		button = new JButton();
+		button.setVisible(true);
+		button.setBounds(100, 70, 70, 90);
+		button.setText("F");
+		button.setFocusable(false);
+		button.addActionListener(this);
+		
+		this.setVisible(true);
+		this.setSize(500,500);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLayout(null);
+		this.add(button);
+		this.add(label);
+	}
+	public static void main(String[]args) {
+		
+		Myframe frame = new Myframe();
+	}
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		if(e.getSource()== button) {
+			label.setVisible(true);
+		}
+	}
+
+}
