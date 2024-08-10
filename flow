@@ -1,0 +1,60 @@
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Scanner;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JLayeredPane;
+import javax.swing.JPanel;
+
+public class Lab extends JFrame  {
+
+	public Lab() {
+		
+		
+		
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(500,500);
+		setLayout(new FlowLayout());
+		
+		JLabel label = new JLabel();
+		label.setOpaque(true);
+		label.setLayout(new FlowLayout());
+		label.setPreferredSize(new Dimension(300,200));
+		label.setBackground(Color.LIGHT_GRAY);
+		
+		label.add(new JButton("1"));
+		label.add(new JButton("2"));
+		label.add(new JButton("3"));
+		label.add(new JButton("4"));
+		label.add(new JButton("5"));
+		label.add(new JButton("6"));
+		label.add(new JButton("7"));
+		label.add(new JButton("8"));
+		label.add(new JButton("9"));
+		label.add(new JButton("10"));
+		label.add(new JButton("11"));
+		label.add(new JButton("12"));
+		
+		add(label);
+		setVisible(true);
+		
+	
+	}
+
+    public static void main(String[] args) {
+   
+    	Lab lab = new Lab();
+    	
+		
+	}
+}
