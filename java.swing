@@ -1,0 +1,19 @@
+
+
+import javax.swing.JOptionPane;
+
+public class Joption {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		JOptionPane.showMessageDialog(null, "How are you", "CARING", JOptionPane.QUESTION_MESSAGE);
+		JOptionPane.showMessageDialog(null, "What do you mean", "Pay attention", JOptionPane.PLAIN_MESSAGE);
+		JOptionPane.showMessageDialog(null, "Education opens doors", "SUCCESS!!", JOptionPane.INFORMATION_MESSAGE);
+		JOptionPane.showMessageDialog(null, "Don't touch burning stove", "CAUTION!", JOptionPane.WARNING_MESSAGE);
+		while(true) {
+		JOptionPane.showMessageDialog(null, "You get nothing wasting your life", "FAILURE!!", JOptionPane.ERROR_MESSAGE);
+		}
+		
+	}
+}
