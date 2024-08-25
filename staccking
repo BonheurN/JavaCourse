@@ -1,0 +1,71 @@
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JLayer;
+import javax.swing.JLayeredPane;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+
+public class Main extends JFrame implements ActionListener{
+
+
+	
+	Main(){
+		
+		
+		JLabel lay1 = new JLabel();
+		lay1.setBounds(50,50,200,200);
+		lay1.setBackground(Color.GREEN);
+		lay1.setOpaque(true);
+		
+		JLabel lay2 = new JLabel();
+		lay2.setBounds(100,100,200,200);
+		lay2.setBackground(Color.BLUE);
+		lay2.setOpaque(true);
+		
+		JLabel lay3 = new JLabel();
+		lay3.setBounds(150,150,200,200);
+		lay3.setBackground(Color.RED);
+		lay3.setOpaque(true);
+		
+		JLayeredPane pane = new JLayeredPane();
+		pane.setBounds(0,0,500,500);
+		pane.add(lay1, Integer.valueOf(0));
+		pane.add(lay2, Integer.valueOf(1));
+		pane.add(lay3, Integer.valueOf(2));
+		
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(new Dimension(500, 500));
+		setLayout(null);
+//		pack();
+		add(pane);
+		setVisible(true);
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Main main = new Main();
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+			
+	}
+}
