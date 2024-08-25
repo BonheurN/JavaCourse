@@ -1,0 +1,68 @@
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JLayer;
+import javax.swing.JLayeredPane;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+
+public class Main extends JFrame implements ActionListener{
+
+
+	
+	Main(){
+		
+	
+		
+		
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//		setSize(new Dimension(500, 500));
+		
+		setLayout(new FlowLayout());
+		
+		JButton button = new JButton("Submit");
+		button.setFocusable(false);
+		
+		JTextField text = new JTextField();
+		text.setPreferredSize(new Dimension(250,40));
+		text.setBackground(Color.BLACK);
+		text.setFont(new Font("MV BOlI", Font.PLAIN,25));
+		text.setForeground(Color.GREEN);
+		
+		add(button);
+		add(text);
+		
+		pack();
+		setVisible(true);
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Main main = new Main();
+		
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+			
+	}
+}
