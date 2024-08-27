@@ -1,0 +1,65 @@
+import javax.swing.JFrame;
+import javax.swing.*;
+import java.awt.*;
+import javax.swing.event.*;
+
+public class SliderDemo extends JFrame implements ChangeListener {
+
+	JPanel panel;
+	JLabel label;
+	JSlider slider;
+	SliderDemo(){
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(420,420);
+		setTitle("Slider Demo");
+		
+		
+		panel = new JPanel();
+		
+		
+		
+		slider = new JSlider(0,100,50);
+		slider.setPreferredSize(new Dimension(400,200));
+		slider.setOrientation(SwingConstants.VERTICAL);
+		
+		slider.setPaintLabels(true);
+		slider.setFont(new Font("MV Boli",Font.PLAIN,15));
+		
+		slider.setPaintTicks(true);
+		slider.setMinorTickSpacing(10);
+		
+		
+		slider.setPaintTrack(true);
+		slider.setMajorTickSpacing(25);
+		slider.addChangeListener(this);
+		label = new JLabel();
+		label.setFont(new Font("MV Boli",Font.PLAIN,25));
+		label.setText("°C "+ slider.getValue());
+		
+		
+		panel.add(slider);
+		panel.add(label);
+		add(panel);
+		setVisible(true);
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		SliderDemo slider = new SliderDemo();
+
+	}
+
+
+
+	@Override
+	public void stateChanged(ChangeEvent e) {
+		// TODO Auto-generated method stub
+		label.setText("°C "+ slider.getValue());
+	}
+
+	
+}
